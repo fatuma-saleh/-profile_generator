@@ -1,4 +1,3 @@
-const { RSA_X931_PADDING } = require('constants');
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -20,6 +19,7 @@ rl.question('What is your name? Nicknames are also acceptable ?', (answer1) => {
               process.stdout.write(`I love eating ${answer5} for ${answer4}.`);
               process.stdout.write(`My favourite sport is ${answer6}.`)
               process.stdout.write(`My superpower is  ${answer7}.`);
+              console.log()
               rl.close();
             });
           });
